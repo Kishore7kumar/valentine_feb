@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <div class="heading-container">
+        <p>💝Happy Valentines Day💝</p><br>
+
+    </div>
+</head>
+
+<body>
+    <div class="firstpg">
+
+        <div class="imgs-container">
+            <img src="imgs/3rdimg.jfif" alt="firstimg">
+        </div>
+        <div class="container">
+            <p>❤️Hey Cutie, Will U be my Valentine!?❤️</p>
+        </div>
+        <div class="btns">
+            <button for="yes" class="yes" id="yesButton">
+                <p class="yss">Yesss 🥹</p>
+            </button>
+            <button for="No" class="no" id="noButton">
+                <p class="noo">No way😒</p>
+            </button>
+        </div>
+    </div>
+    <script>const yesButton = document.getElementById('yesButton');
+        const noButton = document.getElementById('noButton');
+
+        yesButton.addEventListener('click', function () {
+            window.location.href = 'faq.html';
+        });
+
+        noButton.addEventListener('click', function () {
+            window.location.href = 'home.html';
+        });</script>
+</body>
+
+</html>

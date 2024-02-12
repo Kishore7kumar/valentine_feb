@@ -1,0 +1,95 @@
+body{
+    background-color:pink;
+}
+.container{
+    text-align: center;
+    padding: 3em;
+}
+
+video{
+    max-width: 100%;
+    height: auto;
+}
+p{
+    font-size: 3em;
+    animation: heartbeat 1s infinite;
+}
+
+
+@keyframes heartbeat{
+    0%{
+        transform: scale(2);
+    }
+    50%{
+        transform: scale(3);
+    }
+    100%{
+        transform: scale(2);
+    }
+}
+footer{
+    position: relative;
+    
+    text-align: end;
+    padding-top: 10em;
+    color: black;
+    text-decoration:underline;
+}
+
+ 
+
+@media(min-width:360px) and (max-width:479px){
+   
+        
+    video{
+        width: 30em;
+    }
+  
+    @keyframes heartbeat{
+        0%{
+            transform:scale(3);
+        }
+        50%{
+            transform: scale(4);
+        }
+        100%{
+            transform: scale(3);
+        }
+    }
+    
+    p{
+        font-size: 3em;
+        animation: heartbeat 1s infinite;
+        
+    }
+    
+}
+
+@media(min-width:480px) and (max-width:719px){
+    video{
+        width: 40em;
+    
+    }
+    
+    p{  
+        font-size: 4em;
+        animation: heartbeat 1s infinite;
+     }
+     footer{
+        position: relative;}
+}
+
+@media(min-width:720px) and (max-width:1080px){
+    video{
+        width: 30em;
+    
+    }
+    
+    p{  
+        font-size: 6em;
+        animation: heartbeat 1s infinite;
+     }
+     footer{
+        position: relative;
+    }
+}
